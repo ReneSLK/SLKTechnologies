@@ -1,0 +1,68 @@
+# robots.txt for SLK Technologies - Solar Energy Solutions
+# This file tells search engine crawlers which pages to index
+
+# Allow all search engines to crawl the entire website
+User-agent: *
+Allow: /
+
+# Allow crawling of all HTML pages
+Allow: /index.html
+Allow: /about.html
+Allow: /products.html
+Allow: /contact.html
+Allow: /enquiry.html
+
+# Allow crawling of CSS and JavaScript files (important for Google)
+Allow: /css_assets/
+Allow: /js_assets/
+
+# Allow crawling of images (important for image search)
+Allow: /_images/
+
+# Disallow crawling of sensitive or unnecessary directories
+# (Add these if you have admin areas, test pages, or private folders)
+# Disallow: /admin/
+# Disallow: /test/
+# Disallow: /private/
+# Disallow: /backup/
+
+# Disallow crawling of specific file types (if needed)
+# Disallow: /*.pdf$
+# Disallow: /*.doc$
+# Disallow: /*.zip$
+
+# Crawl-delay (optional - only use if server is overloaded)
+# Crawl-delay: 10
+
+# Sitemap location - tells search engines where your sitemap is
+Sitemap: https://www.slktechnologies.co.za/sitemap.xml
+
+# Additional sitemaps (if you have multiple)
+# Sitemap: https://www.slktechnologies.co.za/sitemap-images.xml
+# Sitemap: https://www.slktechnologies.co.za/sitemap-news.xml
+
+# Specific rules for Google (optional)
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bing (optional)
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Block bad bots or scrapers (optional)
+# User-agent: BadBot
+# Disallow: /
+
+# User-agent: AhrefsBot
+# Disallow: /
+
+# User-agent: SemrushBot
+# Disallow: /
+
+# Notes:
+# - Place this file in your website root directory
+# - File must be named exactly "robots.txt" (lowercase)
+# - Test your robots.txt at: https://www.google.com/webmasters/tools/robots-testing-tool
+# - Changes may take a few days to be recognized by search engines
